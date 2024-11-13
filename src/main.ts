@@ -6,13 +6,15 @@ import { join } from 'path';
 const port = process.env.PORT ?? 3001;
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule, {
-    httpsOptions: {
+  const app = await NestFactory.create(AppModule 
+    // {
+    // httpsOptions: {
       // key: readFileSync(join(__dirname, '..', 'private.key')),
       // cert: readFileSync(join(__dirname, '..', 'certificate.crt')),
       // ca: readFileSync(join(__dirname, '..', 'ca_bundle.crt')),
-    },
-  });
+    // },
+  // }
+);
 
   app.enableCors({
     origin: '*',

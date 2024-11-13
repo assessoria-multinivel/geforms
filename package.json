@@ -5,9 +5,6 @@
   "author": "Diego Santos",
   "private": true,
   "license": "UNLICENSED",
-  "engines": {
-    "node": ">=18.x"
-  },
   "scripts": {
     "build": "nest build",
     "deploy": "git pull && npm install && nest build && pm2 restart all",
